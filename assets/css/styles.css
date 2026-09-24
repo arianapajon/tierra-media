@@ -295,6 +295,12 @@ h1 span {
   margin-left: auto;
   margin-right: auto;
   border: 3px double #c9a44c;
+  filter: brightness(0.6);
+  transition: filter 0.9s ease;
+}
+
+.principal:hover {
+    filter: brightness(1);
 }
 
 @media (max-width: 900px) {
