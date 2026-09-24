@@ -505,20 +505,20 @@ h1 span {
 }
 
 .poster-placeholder {
-    height: 545px;
-    min-height: 0;
-    padding: 10px;
-    overflow: hidden;
-    margin-bottom: 22px;
-    margin-left: 50px;
-    margin-right: 50px;
+  height: 545px;
+  min-height: 0;
+  padding: 10px;
+  overflow: hidden;
+  margin-bottom: 22px;
+  margin-left: 50px;
+  margin-right: 50px;
 }
 
 .poster-placeholder img {
-    width: auto;
-    height: 100%;
-    max-height: 520px;
-    object-fit: contain;
+  width: auto;
+  height: 100%;
+  max-height: 520px;
+  object-fit: contain;
 }
 
 .poster-placeholder span,
@@ -680,63 +680,226 @@ textarea {
 /* --- ESTILOS MEJORADOS PARA LA GALERÍA Y LIGHTBOX --- */
 
 .gallery-item {
-    cursor: pointer;
-    transition: transform 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+  transition: transform 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
 }
 
 .gallery-item:hover {
-    transform: translateY(-4px);
-    border-color: var(--gold);
-    box-shadow: 0 8px 25px rgba(201, 164, 76, 0.2);
+  transform: translateY(-4px);
+  border-color: var(--gold);
+  box-shadow: 0 8px 25px rgba(201, 164, 76, 0.2);
 }
 
 .gallery-item img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
 }
 
 /* Lightbox Modal */
 .lightbox {
-    display: none;
-    position: fixed;
-    z-index: 1000;
-    inset: 0;
-    background-color: rgba(5, 7, 6, 0.92);
-    backdrop-filter: blur(8px);
-    justify-content: center;
-    align-items: center;
-    padding: 20px;
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  inset: 0;
+  background-color: rgba(5, 7, 6, 0.92);
+  backdrop-filter: blur(8px);
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
 }
 
 .lightbox.active {
-    display: flex;
+  display: flex;
 }
 
 .lightbox-content {
-    max-width: 90%;
-    max-height: 85vh;
-    border: 1px solid var(--gold);
-    box-shadow: 0 0 30px rgba(0, 0, 0, 0.9);
-    object-fit: contain;
-    border-radius: 4px;
+  max-width: 90%;
+  max-height: 85vh;
+  border: 1px solid var(--gold);
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.9);
+  object-fit: contain;
+  border-radius: 4px;
 }
 
 .lightbox-close {
-    position: absolute;
-    top: 20px;
-    right: 35px;
-    color: var(--gold2);
-    font-size: 42px;
-    font-weight: bold;
-    cursor: pointer;
-    transition: color 0.2s ease;
-    user-select: none;
+  position: absolute;
+  top: 20px;
+  right: 35px;
+  color: var(--gold2);
+  font-size: 42px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: color 0.2s ease;
+  user-select: none;
 }
 
 .lightbox-close:hover {
-    color: #fff;
+  color: #fff;
+}
+
+.site-footer {
+  margin-top: 80px;
+  background: linear-gradient(180deg, rgba(8, 13, 10, 0.98), rgba(4, 7, 5, 1));
+  border-top: 1px solid rgba(201, 164, 76, 0.55);
+  color: #d8d0bd;
+}
+
+/* Línea decorativa superior */
+.site-footer::before {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 3px;
+  background: linear-gradient(90deg, transparent, #c9a44c, #8f6d25, #c9a44c, transparent);
+}
+
+/* Contenedor principal */
+.footer-inner {
+  width: min(1200px, 92%);
+  margin: 0 auto;
+  padding: 55px 0 45px;
+  display: grid;
+  grid-template-columns: 1.4fr 1fr 1.5fr 1fr;
+  gap: 45px;
+}
+
+.footer-brand {
+  padding-right: 25px;
+}
+
+.footer-ring {
+  width: 40px;
+  height: 40px;
+  margin-bottom: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer-ring img {
+  width: 65px;
+  height: 65px;
+  object-fit: contain;
+}
+
+.footer-brand h3 {
+  margin: 0 0 12px;
+  font-family: "Cinzel", serif;
+  font-size: 1.45rem;
+  letter-spacing: 2px;
+  color: #c9a44c;
+}
+
+.footer-brand p {
+  max-width: 290px;
+  margin: 0;
+  color: #9f9888;
+  line-height: 1.7;
+  font-size: 0.95rem;
+}
+
+/* ========================================================= COLUMNAS ========================================================= */
+.footer-column h4 {
+  margin: 5px 0 18px;
+  font-family: "Cinzel", serif;
+  font-size: 1rem;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  color: #c9a44c;
+}
+
+.footer-column ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-column li {
+  margin-bottom: 10px;
+}
+
+.footer-column a {
+  color: #aaa391;
+  text-decoration: none;
+  font-family: "Cormorant Garamond", serif;
+  font-size: 1rem;
+  transition: color 0.25s ease, padding-left 0.25s ease;
+}
+
+.footer-column a:hover {
+  color: #e0c46c;
+  padding-left: 6px;
+}
+
+/* ========================================================= SEPARADOR ========================================================= */
+.footer-bottom {
+  width: min(1200px, 92%);
+  margin: 0 auto;
+  padding: 22px 0;
+  border-top: 1px solid rgba(201, 164, 76, 0.18);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+
+.footer-bottom p {
+  margin: 0;
+  color: #716c60;
+  font-size: 0.85rem;
+}
+
+.footer-bottom em {
+  color: #8f846f;
+}
+
+/* ========================================================= RESPONSIVE ========================================================= */
+@media (max-width: 900px) {
+  .footer-inner {
+    grid-template-columns: 1fr 1fr;
+    gap: 40px 30px;
+  }
+
+  .footer-brand {
+    grid-column: 1 / -1;
+    padding-right: 0;
+  }
+}
+
+@media (max-width: 600px) {
+  .footer-inner {
+    grid-template-columns: 1fr;
+    padding: 40px 0 35px;
+    gap: 32px;
+  }
+
+  .footer-brand {
+    text-align: center;
+  }
+
+  .footer-brand p {
+    margin: 0 auto;
+  }
+
+  .footer-ring {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .footer-column {
+    text-align: center;
+  }
+
+  .footer-column a:hover {
+    padding-left: 0;
+  }
+
+  .footer-bottom {
+    flex-direction: column;
+    text-align: center;
+  }
 }
 
 @media(max-width:1050px) {
