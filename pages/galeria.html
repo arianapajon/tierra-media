@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galería | Tierra Media</title>
+    <link rel="stylesheet" href="../assets/css/styles.css">
+</head>
+
+<body>
+    <header class="page-hero">
+        <nav class="navbar" style="position:absolute;top:0;left:0;right:0">
+            <a class="brand" href="../index.html"><span class="brand-ring"><img src="../assets/images/logo-anillo.png"
+                        alt="Logo"></span><span>TIERRA MEDIA</span></a>
+            <button class="menu-toggle" aria-label="Abrir menú">☰</button>
+            <ul class="nav-menu">
+                <li><a href="../index.html">Inicio</a></li>
+                <li class="has-submenu"><a href="peliculas.html">Películas <span>⌄</span></a>
+                    <ul class="submenu">
+                        <li class="submenu-title">El Señor de los Anillos</li>
+                        <li><a href="pelicula-comunidad.html">La Comunidad del Anillo</a></li>
+                        <li><a href="pelicula-dos-torres.html">Las Dos Torres</a></li>
+                        <li><a href="pelicula-retorno.html">El Retorno del Rey</a></li>
+                        <li class="submenu-title">El Hobbit</li>
+                        <li><a href="pelicula-viaje.html">Un viaje inesperado</a></li>
+                        <li><a href="pelicula-smaug.html">La desolación de Smaug</a></li>
+                        <li><a href="pelicula-batalla.html">La batalla de los cinco ejércitos</a></li>
+                    </ul>
+                </li>
+                <li class="has-submenu"><a href="personajes.html">Personajes <span>⌄</span></a>
+                    <ul class="submenu">
+                        <li><a href="personajes.html#comunidad">La Comunidad</a></li>
+                        <li><a href="personajes.html#heroes">Héroes y aliados</a></li>
+                        <li><a href="personajes.html#villanos">Villanos</a></li>
+                        <li><a href="personajes.html#razas">Razas y pueblos</a></li>
+                        <li><a href="genealogias.html">Genealogías</a></li>
+                    </ul>
+                </li>
+                <li class="has-submenu"><a href="tierramedia.html">Tierra Media <span>⌄</span></a>
+                    <ul class="submenu">
+                        <li><a href="tierramedia.html#lugares">Lugares</a></li>
+                        <li><a href="tierramedia.html#razas">Razas</a></li>
+                        <li><a href="tierramedia.html#reinos">Reinos</a></li>
+                        <li><a href="tierramedia.html#objetos">Objetos y artefactos</a></li>
+                        <li><a href="tierramedia.html#cronologia">Cronología</a></li>
+                    </ul>
+                </li>
+                <li class="has-submenu"><a href="galeria.html">Galería <span>⌄</span></a>
+                    <ul class="submenu">
+                        <li><a href="galeria.html">Todas las imágenes</a></li>
+                    </ul>
+                </li>
+                <li class="has-submenu"><a href="curiosidades.html">Curiosidades <span>⌄</span></a>
+                    <ul class="submenu">
+                        <li><a href="curiosidades.html#peliculas">Sobre las películas</a></li>
+                        <li><a href="curiosidades.html#personajes">Sobre los personajes</a></li>
+                        <li><a href="curiosidades.html#rodaje">Rodaje</a></li>
+                        <li><a href="curiosidades.html#detalles">Detalles ocultos</a></li>
+                    </ul>
+                </li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+        <p class="eyebrow">IMÁGENES DE LA TIERRA MEDIA</p>
+        <h1>Galería</h1>
+        <p>Una colección visual completa de la Tierra Media.</p>
+    </header>
+    <main class="page-main">
+        <div class="gallery-grid">
+            <div class="gallery-item">
+                <img src="../assets/images/comunidad.jpg" alt="La Comunidad del Anillo" class="gallery-img">
+            </div>
+            <div class="gallery-item">
+                <img src="../assets/images/samfrodogollum.jpg" alt="Sam, Frodo y Gollum" class="gallery-img">
+            </div>
+            <div class="gallery-item">
+                <img src="../assets/images/hobbitg.jpg" alt="La compania" class="gallery-img">
+            </div>
+            <div class="gallery-item">
+                <img src="../assets/images/hobbitsgg.jpg" alt="Hobbits" class="gallery-img">
+            </div>
+            <div class="gallery-item">
+                <img src="../assets/images/gandalfg.jpg" alt="Gandalf" class="gallery-img">
+            </div>
+            <div class="gallery-item">
+                <img src="../assets/images/comunidadg.jpg" alt="La comunidad del anillo" class="gallery-img">
+            </div>
+            <div class="gallery-item">
+                <img src="../assets/images/frodog.jpg" alt="Frodo" class="gallery-img">
+            </div>
+            <div class="gallery-item">
+                <img src="../assets/images/enanosbilbo.avif" alt="Bilbo y enanos" class="gallery-img">
+            </div>
+            <div class="gallery-item">
+                <img src="../assets/images/enanosbilbog.jpg" alt="Enanos y bilbo" class="gallery-img">
+            </div>
+        </div>
+    </main>
+
+    <!-- Modal Lightbox para ver imágenes ampliadas -->
+    <div id="lightbox" class="lightbox">
+        <span class="lightbox-close">&times;</span>
+        <img class="lightbox-content" id="lightbox-img" alt="Imagen ampliada">
+    </div>
+
+    <footer class="site-footer"><span>✦</span> TIERRA MEDIA <span>✦</span><small>Un archivo dedicado a las historias de la Tierra Media</small></footer>
+    <script src="../assets/js/main.js"></script>
+</body>
+
+</html>
