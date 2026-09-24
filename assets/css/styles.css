@@ -298,10 +298,10 @@ h1 span {
 }
 
 @media (max-width: 900px) {
-    .principal {
-        width: 90%;
-        height: auto;
-    }
+  .principal {
+    width: 90%;
+    height: auto;
+  }
 }
 
 .section {
@@ -413,6 +413,117 @@ h1 span {
 .feature-card:hover {
   transform: translateY(-5px);
   border-color: var(--gold)
+}
+
+.home-header {
+  animation: headerAppear 1.4s ease-out both;
+}
+
+/* Contenido principal del hero */
+.home-header .hero-content {
+  animation: heroReveal 1.2s ease-out 0.35s both;
+}
+
+/* Texto pequeño superior */
+.home-header .hero-content .eyebrow {
+  animation: heroText 0.9s ease-out 0.5s both;
+}
+
+/* Título */
+.home-header .hero-content h1 {
+  animation: heroTitle 1.2s ease-out 0.7s both;
+}
+
+/* Frase */
+.home-header .hero-quote {
+  animation: heroText 1s ease-out 1s both;
+}
+
+/* Botones */
+.home-header .hero-actions {
+  animation: heroText 1s ease-out 1.25s both;
+}
+
+.home-header .brand-ring img {
+  animation: ringReveal 1.5s ease-out 0.2s both;
+}
+
+@keyframes headerAppear {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes heroReveal {
+  from {
+    opacity: 0;
+    transform: translateY(35px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes heroTitle {
+  from {
+    opacity: 0;
+    transform: translateY(25px);
+    letter-spacing: 8px;
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+    letter-spacing: normal;
+  }
+}
+
+@keyframes heroText {
+  from {
+    opacity: 0;
+    transform: translateY(15px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes ringReveal {
+  from {
+    opacity: 0;
+    transform: scale(0.75) rotate(-15deg);
+    filter: brightness(0.5);
+  }
+
+  to {
+    opacity: 1;
+    transform: scale(1) rotate(0);
+    filter: brightness(1);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+
+  .home-header,
+  .home-header .hero-content,
+  .home-header .hero-content .eyebrow,
+  .home-header .hero-content h1,
+  .home-header .hero-quote,
+  .home-header .hero-actions,
+  .home-header .brand-ring img {
+    animation: none;
+    opacity: 1;
+    transform: none;
+    filter: none;
+  }
 }
 
 .card-symbol {
