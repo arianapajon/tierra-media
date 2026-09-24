@@ -289,6 +289,21 @@ h1 span {
   box-shadow: 0 8px 24px rgba(201, 164, 76, .18)
 }
 
+.principal {
+  width: 900px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border: 3px double #c9a44c;
+}
+
+@media (max-width: 900px) {
+    .principal {
+        width: 90%;
+        height: auto;
+    }
+}
+
 .section {
   padding: 90px 7%;
   max-width: 1280px;
@@ -315,7 +330,8 @@ h1 span {
   display: grid;
   grid-template-columns: 1.35fr 1fr;
   gap: 28px;
-  align-items: stretch
+  align-items: stretch;
+  margin: 20px;
 }
 
 .ornate-card,
